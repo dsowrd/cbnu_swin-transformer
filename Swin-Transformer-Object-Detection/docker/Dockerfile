@@ -24,5 +24,5 @@ RUN conda clean --all
 RUN git clone https://github.com/dsowrd/cbnu_swin-transformer.git /cbnu
 WORKDIR /cbnu
 ENV FORCE_CUDA="1"
-RUN pip install -r requirements/build.txt
-RUN pip install --no-cache-dir -e .
+RUN pip install -r Swin-Transformer-Object-Detection/requirements/build.txt
+RUN pip install --no-cache-dir -e Swin-Transformer-Object-Detection/.
